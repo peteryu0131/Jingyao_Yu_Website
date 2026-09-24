@@ -786,6 +786,9 @@ section {
   font-size: clamp(30px, 3.5vw, 42px);
   letter-spacing: -0.045em;
 }
+.section-heading-link {
+  margin-left: auto;
+}
 .section-number {
   font-size: 13px;
   letter-spacing: 0.1em;
@@ -960,6 +963,12 @@ section {
   }
   .section-heading {
     gap: 14px;
+    flex-wrap: wrap;
+  }
+  .section-heading-link {
+    width: 100%;
+    margin-left: 0;
+    text-align: right;
   }
   .section-intro .text-link {
     white-space: normal;
@@ -1045,5 +1054,11 @@ section {
 .paper-overview .paper-collaboration {
   font-size: 14px;
   margin: 20px 0 0;
+  color: var(--blue);
+}
+.paper-overview .paper-status {
+  margin: 22px 0 0;
+  font-size: 14px;
+  font-weight: 650;
   color: var(--blue);
 }

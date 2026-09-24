@@ -82,109 +82,6 @@
             </p>
           </div>
           <div class="research-grid">
-            <details class="item-disclosure research-card">
-              <summary>
-                <div class="item-heading">
-                  <div class="research-meta">Scientific computing · Ongoing</div>
-                  <h3>PolyFEM Python API</h3>
-                  <p class="item-overview">
-                    Python tools for finite element simulation and differentiable
-                    workflows.
-                  </p>
-                </div>
-                <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </summary>
-              <div class="item-body">
-                <p>
-                  Developing a Python interface for PolyFEM that turns simulation
-                  settings into a usable API. My work includes schema-based code
-                  generation, example coverage, and checks against the C++ solver.
-                  I am also exploring a PyTorch-facing workflow for differentiable
-                  simulation.
-                </p>
-                <a
-                  class="text-link"
-                  href="https://github.com/polyfem/polyfem-python"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Explore PolyFEM ↗
-                </a>
-              </div>
-            </details>
-
-            <details class="item-disclosure research-card">
-              <summary>
-                <div class="item-heading">
-                  <div class="research-meta">Machine learning · Work in progress</div>
-                  <h3>
-                    Learning Physical Responses and Gradients with Differentiable
-                    Simulation
-                  </h3>
-                  <p class="item-overview">
-                    Ongoing research on training machine learning models with
-                    high-fidelity simulation data and physical gradients.
-                  </p>
-                </div>
-                <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </summary>
-              <div class="item-body paper-overview">
-                <h4>Learning from contact-rich physical simulations</h4>
-                <p>
-                  This ongoing paper studies how machine learning can learn
-                  physical responses and sensitivities from deformable-body
-                  simulations. Using PolyFEM as the numerical backend, the work
-                  connects finite element simulation, differentiable computation,
-                  and model training to support faster exploration of material and
-                  geometric design choices.
-                </p>
-                <h4>Simulation data and surrogate learning</h4>
-                <p>
-                  Parameterized simulations vary material stiffness and geometry
-                  to produce datasets of stress responses. Surrogate models learn
-                  to predict these responses from the input parameters, allowing
-                  physical behavior to be estimated without running a full
-                  simulation for every query. The experiments examine how
-                  prediction difficulty changes across response quantities and
-                  regions of the design space.
-                </p>
-                <ul class="research-contributions">
-                  <li>
-                    <strong>Physics-based training data:</strong> Uses forward
-                    simulations to generate response targets and adjoint
-                    computations to provide gradient supervision.
-                  </li>
-                  <li>
-                    <strong>Gradient-aware neural networks:</strong> Investigates
-                    a multi-head model that learns the objective value, gradient
-                    magnitude, and gradient sign as related prediction tasks.
-                  </li>
-                  <li>
-                    <strong>Training and evaluation:</strong> Compares direct
-                    gradient supervision with differentiating a model trained only
-                    on objective values, evaluating both sensitivity direction and
-                    magnitude.
-                  </li>
-                  <li>
-                    <strong>Differentiable workflows:</strong> Connects C++
-                    forward and adjoint routines to PyTorch, supporting
-                    Python-defined losses and optimization loops.
-                  </li>
-                </ul>
-                <h4>Research direction</h4>
-                <p>
-                  The goal is to learn both how a physical system responds and how
-                  that response changes when its parameters are adjusted. This
-                  connects simulation-based data generation with surrogate
-                  training and sensitivity analysis for design exploration. The
-                  manuscript and experiments are in progress.
-                </p>
-              </div>
-            </details>
 
             <details class="item-disclosure research-card">
               <summary>
@@ -268,6 +165,127 @@
                 <p class="paper-collaboration">
                   Research collaboration with Nafiseh Izadyar and my supervisor,
                   Teseo Schneider.
+                </p>
+              </div>
+            </details>
+            <details class="item-disclosure research-card">
+              <summary>
+                <div class="item-heading">
+                  <div class="research-meta">Scientific computing · Ongoing</div>
+                  <h3>PolyFEM Python API</h3>
+                  <p class="item-overview">
+                    Python tools for finite element simulation and differentiable
+                    workflows.
+                  </p>
+                </div>
+                <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <div class="item-body">
+                <p>
+                  Developing a Python interface for PolyFEM that turns simulation
+                  settings into a usable API. My work includes schema-based code
+                  generation, example coverage, and checks against the C++ solver.
+                  I am also exploring a PyTorch-facing workflow for differentiable
+                  simulation.
+                </p>
+                <a
+                  class="text-link"
+                  href="https://github.com/polyfem/polyfem-python"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Explore PolyFEM ↗
+                </a>
+              </div>
+            </details>
+
+            <details class="item-disclosure research-card">
+              <summary>
+                <div class="item-heading">
+                  <div class="research-meta">
+                    Differentiable Simulation · Machine Learning · Ongoing Research
+                  </div>
+                  <h3>Connecting Differentiable Simulation and Machine Learning</h3>
+                  <p class="item-overview">
+                    Developing a Python and PyTorch interface to PolyFEM for
+                    simulation-based learning, sensitivity analysis, and design
+                    optimization.
+                  </p>
+                </div>
+                <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <div class="item-body paper-overview">
+                <h4>From simulation to learning</h4>
+                <p>
+                  This project connects PolyFEM’s finite element solver and adjoint
+                  gradients to Python-based learning workflows. It brings together
+                  programmatic simulation setup, structured outputs, and
+                  PyTorch-compatible differentiation to support data generation and
+                  gradient-based optimization.
+                </p>
+                <h4>Learning physical responses and sensitivities</h4>
+                <p>
+                  Current experiments study a falling block impacting a deformable
+                  lattice, varying material stiffness, lattice thickness, and
+                  orientation. Using simulation outputs and adjoint gradients, we
+                  investigate how surrogate models can predict stress responses and
+                  their sensitivity to material changes.
+                </p>
+                <ul class="research-contributions">
+                  <li>
+                    <strong>Simulation workflows:</strong> Build parameterized
+                    experiments and extract stress responses for training and
+                    evaluation.
+                  </li>
+                  <li>
+                    <strong>Differentiable optimization:</strong> Connect C++
+                    forward and adjoint routines to PyTorch to explore material and
+                    geometric design updates.
+                  </li>
+                  <li>
+                    <strong>Surrogate learning:</strong> Compare models for peak
+                    stress and stress-based objective prediction.
+                  </li>
+                  <li>
+                    <strong>Gradient learning:</strong> Investigate a multi-head
+                    neural network that predicts objective values,
+                    material-gradient magnitudes, and signs, comparing direct
+                    gradient supervision with derivatives of a value-only model.
+                  </li>
+                </ul>
+                <p>
+                  The broader goal is to make high-fidelity simulation easier to
+                  use in machine learning and to study how learned models can
+                  support design exploration.
+                </p>
+                <h4>Preliminary results</h4>
+                <p>Current experiments achieve:</p>
+                <ul class="research-contributions">
+                  <li>
+                    <strong>Peak stress prediction:</strong> 74.1% of predictions
+                    fall within 10% of simulated peak stress on the held-out test
+                    set.
+                  </li>
+                  <li>
+                    <strong>Stress objective prediction:</strong> 97.3% of
+                    predictions fall within 10% of the simulated objective value
+                    under five-fold cross-validation.
+                  </li>
+                  <li>
+                    <strong>Material-gradient prediction:</strong> The multi-head
+                    model achieves 97.4% gradient-sign agreement, compared with
+                    86.9% for a value-only model differentiated through autograd.
+                    It also predicts gradient values within 20% relative error in
+                    73.8% of cases.
+                  </li>
+                </ul>
+                <p class="paper-status">
+                  These results are preliminary. Manuscript in preparation;
+                  experiments and evaluation are ongoing.
                 </p>
               </div>
             </details>
@@ -489,18 +507,16 @@
         <div class="section-heading">
           <span class="section-number">03</span>
           <h2>Projects</h2>
+          <a
+            class="text-link section-heading-link"
+            href="https://github.com/peteryu0131"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            More on GitHub ↗
+          </a>
         </div>
         <div class="section-content">
-          <div class="section-intro">
-            <a
-              class="text-link"
-              href="https://github.com/peteryu0131"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              More on GitHub ↗
-            </a>
-          </div>
           <div class="projects-grid">
             <details class="item-disclosure project project-featured">
               <summary>
@@ -600,13 +616,12 @@
                   <span class="project-no">PROJECT 02</span>
                   <h3>Mood Dump</h3>
                   <p class="item-overview">
-                    A daily space for moods, journal entries, and small goals.
+                    A mobile app combining private journaling, mood tracking, and
+                    anonymous community sharing.
                   </p>
-                  <div class="tags">
-                    <span class="tag">iOS app</span>
-                    <span class="tag">Journaling</span>
-                    <span class="tag">Mood tracking</span>
-                  </div>
+                  <p class="project-stack">
+                    React Native · Expo · TypeScript · Supabase · OpenAI API
+                  </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -614,8 +629,36 @@
               </summary>
               <div class="item-body">
                 <p>
-                  A private daily journal for tracking moods, writing short
-                  entries, setting small goals, and looking back on past days.
+                  I designed and developed Mood Dump to bring daily check-ins,
+                  personal reflections, and small goals into one app. Users can
+                  record their mood and energy, save journal entries, track plans,
+                  and review their history through weekly and monthly summaries.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    <strong>Daily reflection:</strong> Mood and energy check-ins,
+                    card-based journal entries, goal tracking, reminders, and an
+                    archive of past days.
+                  </li>
+                  <li>
+                    <strong>Anonymous community:</strong> Posts with text and
+                    images, comments, saved posts, and “Same here” reactions,
+                    alongside reporting and blocking controls.
+                  </li>
+                  <li>
+                    <strong>AI integration:</strong> OpenAI-powered daily replies
+                    and summaries that help users reflect on their entries.
+                  </li>
+                  <li>
+                    <strong>Backend and privacy:</strong> Supabase authentication,
+                    database, and image storage, with row-level access rules
+                    separating private records from shared community content.
+                  </li>
+                </ul>
+                <p>
+                  My work covered the mobile interface, backend integration, AI
+                  features, and iOS build and submission workflow using EAS and
+                  TestFlight.
                 </p>
                 <div class="item-link">
                   <a
@@ -636,13 +679,12 @@
                   <span class="project-no">PROJECT 03</span>
                   <h3>Pop Ten!</h3>
                   <p class="item-overview">
-                    Merge neighboring number tiles to make 10 and build combos.
+                    A number puzzle game with drag-to-merge controls, daily
+                    challenges, and real-time two-player matches.
                   </p>
-                  <div class="tags">
-                    <span class="tag">iOS game</span>
-                    <span class="tag">Puzzle</span>
-                    <span class="tag">Daily challenges</span>
-                  </div>
+                  <p class="project-stack">
+                    React Native · TypeScript · Reanimated · Supabase
+                  </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -650,8 +692,37 @@
               </summary>
               <div class="item-body">
                 <p>
-                  A number puzzle game where players merge neighboring tiles to
-                  make 10, build combos, and compete in daily challenges.
+                  Pop Ten! turns a simple rule—merge neighboring numbers to make
+                  10—into a game of board management and combo building. Players
+                  clear tiles, trigger special effects, and plan their next moves
+                  as the board refills.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    <strong>Core gameplay:</strong> Drag-based merging, exact-ten
+                    clears, gravity and refill logic, combo scoring, and special
+                    Star and Bomb tiles.
+                  </li>
+                  <li>
+                    <strong>Interactive feedback:</strong> Tile animations, clear
+                    effects, and haptic feedback make merges and special actions
+                    easier to follow.
+                  </li>
+                  <li>
+                    <strong>Daily challenges:</strong> A shared daily setup gives
+                    players the same starting conditions and tools.
+                  </li>
+                  <li>
+                    <strong>Real-time matches:</strong> Two players compete on
+                    separate boards with a shared starting seed and tool
+                    configuration. Timed matches include score-based results and
+                    rematch support.
+                  </li>
+                </ul>
+                <p>
+                  Development work spans game-state logic, gesture interaction,
+                  animation sequencing, and multiplayer match flow, with iOS builds
+                  distributed through TestFlight.
                 </p>
                 <div class="item-link">
                   <a
