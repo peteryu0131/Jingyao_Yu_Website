@@ -227,6 +227,12 @@ button:focus-visible {
 .button:hover {
   transform: translateY(-2px);
 }
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
 .button-primary {
   background: var(--blue);
   color: white;
@@ -681,13 +687,24 @@ section {
     padding-inline: 20px;
   }
   .top {
+    position: relative;
     height: auto;
     min-height: 72px;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     padding-block: 13px;
+    padding-right: 48px;
     gap: 8px;
+  }
+  .theme-toggle {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    z-index: 2;
+    width: 36px;
+    height: 36px;
+    flex: none;
   }
   .nav {
     width: 100%;
@@ -705,7 +722,7 @@ section {
   .nav .nav-contact {
     padding: 0;
     background: none;
-    color: #49556e;
+    color: var(--nav-link);
   }
   .hero {
     display: flex;
@@ -734,6 +751,14 @@ section {
   }
   .intro {
     font-size: 20px;
+  }
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .actions .button {
+    width: 100%;
   }
   .section {
     padding-block: 60px;
@@ -1368,12 +1393,4 @@ html[data-theme="dark"] .item-disclosure.project:hover,
 html[data-theme="dark"] .item-disclosure.research-card[open],
 html[data-theme="dark"] .item-disclosure.project[open] {
   border-color: #446291;
-}
-
-@media (max-width: 650px) {
-  .theme-toggle {
-    width: 36px;
-    height: 36px;
-    flex: none;
-  }
 }
