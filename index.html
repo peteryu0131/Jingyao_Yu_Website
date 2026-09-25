@@ -3,28 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123782">
+  <meta name="theme-color" content="#123782" id="theme-color">
   <meta name="description" content="Jingyao Yu is a software developer and computer science master's student working on 3D understanding, differentiable simulation, and applied machine learning.">
   <meta name="author" content="Jingyao Yu">
   <title>Jingyao Yu — Software Developer</title>
-  <link rel="canonical" href="https://jingyao-yu-website.vercel.app/">
+  <link rel="canonical" href="https://peteryu0131.github.io/Jingyao_Yu_Website/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jingyao Yu — Software Developer">
   <meta property="og:description" content="Software developer and CS master's student. Research in 3D understanding, differentiable simulation, and applied machine learning.">
-  <meta property="og:image" content="https://jingyao-yu-website.vercel.app/assets/portrait.jpg">
-  <meta property="og:url" content="https://jingyao-yu-website.vercel.app/">
+  <meta property="og:image" content="https://peteryu0131.github.io/Jingyao_Yu_Website/assets/portrait.jpg">
+  <meta property="og:url" content="https://peteryu0131.github.io/Jingyao_Yu_Website/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Jingyao Yu — Software Developer">
   <meta name="twitter:description" content="Software developer and CS master's student. Research in 3D understanding, differentiable simulation, and applied machine learning.">
-  <meta name="twitter:image" content="https://jingyao-yu-website.vercel.app/assets/portrait.jpg">
+  <meta name="twitter:image" content="https://peteryu0131.github.io/Jingyao_Yu_Website/assets/portrait.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (() => {
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute(
+        "data-theme",
+        saved || (prefersDark ? "dark" : "light")
+      );
+    })();
+  </script>
 </head>
 <body>
-  <header class="site-header" id="top">
+  <div id="top" tabindex="-1"></div>
+  <header class="site-header">
     <div class="wrap top">
       <a class="brand" href="#top">JINGYAO <span>YU</span></a>
       <nav class="nav" aria-label="Main navigation">
@@ -32,6 +43,21 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+          title="Toggle theme"
+        >
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 2v2.2M12 19.8V22M4.2 12H2M22 12h-2.2M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20 13.4A7.6 7.6 0 1 1 10.6 4 6.2 6.2 0 0 0 20 13.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
         <a class="nav-contact" href="#contact">Contact</a>
       </nav>
     </div>
