@@ -128,8 +128,8 @@
                     Geometric Inspection
                   </h3>
                   <p class="item-overview">
-                    Identifying unfamiliar 3D objects through active visual
-                    reasoning, without predefined categories or task-specific 3D
+                    Identifying unfamiliar 3D objects through active geometric
+                    inspection, without predefined categories or task-specific 3D
                     training.
                   </p>
                 </div>
@@ -141,62 +141,76 @@
                 <h4>Recognizing objects from geometry alone</h4>
                 <p>
                   What can an AI system recognize when an object has no color,
-                  texture, physical scale, standard orientation, or surrounding
+                  texture, physical scale, canonical orientation, or surrounding
                   scene? GLANCE studies free-form 3D object identification:
-                  inferring an object’s identity directly from its geometry,
-                  without receiving a list of possible categories. This setting
-                  captures a central challenge in 3D understanding: a single view
-                  can be ambiguous, and the same shape can admit several
-                  reasonable descriptions.
+                  inferring an object’s identity from geometry without a list of
+                  possible categories. A single view can be ambiguous, and the
+                  same shape can admit several reasonable descriptions.
                 </p>
                 <h4>Active inspection and hypothesis testing</h4>
                 <p>
-                  GLANCE uses an off-the-shelf multimodal language model to
+                  GLANCE uses an off-the-shelf multimodal large language model to
                   inspect rendered views of a 3D object. It maintains competing
-                  hypotheses, predicts which geometric features would distinguish
-                  them, and selects additional viewpoints to test those
-                  predictions. Recognition becomes an iterative process of
-                  gathering evidence and resolving uncertainty.
+                  identity hypotheses, predicts which geometric features would
+                  distinguish them, and selects additional viewpoints to test
+                  those predictions.
                 </p>
                 <ul class="research-contributions">
                   <li>
                     <strong>Free-form recognition:</strong> Generates object
-                    identities without a predefined category vocabulary at
-                    inference time or specialized 3D training.
+                    identities without a predefined category vocabulary or
+                    task-specific 3D training.
                   </li>
                   <li>
-                    <strong>Evidence-driven viewpoint selection:</strong> Chooses
-                    new observations to resolve ambiguity between plausible
-                    identities.
+                    <strong>Evidence-driven inspection:</strong> Selects viewpoints
+                    to distinguish plausible identities and checks the resulting
+                    observations against its predictions.
                   </li>
                   <li>
-                    <strong>Human-annotated benchmark:</strong> Approximately
-                    1,000 3D shapes, each independently assigned a free-form
-                    identity and confidence score by three human annotators.
+                    <strong>Human-annotated benchmark:</strong> Contains 1,118
+                    shapes, each independently identified by four human annotators
+                    with confidence scores. Multiple reference identities preserve
+                    ambiguity rather than forcing a single ground truth.
                   </li>
                   <li>
-                    <strong>Semantic evaluation:</strong> Distinguishes equivalent
-                    identities, broader descriptions, related objects, and
-                    incorrect predictions to assess agreement beyond exact text
-                    matching.
+                    <strong>Semantic evaluation:</strong> Assesses agreement
+                    through equivalent identities, broader descriptions, related
+                    objects, and incorrect predictions, rather than exact text
+                    matching alone.
                   </li>
                 </ul>
-                <h4>Results on a controlled 100-object comparison</h4>
+                <h4>Results reported in the current submission</h4>
                 <p>
-                  A single observation achieves 52% primary accuracy, while random
-                  multiview recognition reaches 73%. GLANCE reaches
-                  <strong>75% primary accuracy with 15% fewer observations</strong>
-                  than random multiview recognition, and improves near-match
-                  accuracy from 74% to 81%. Viewpoint selection without explicit
-                  hypothesis formulation and verification reaches only 69%.
+                  GLANCE achieves
+                  <strong>83.2% primary accuracy on 570 benchmark objects</strong>.
+                  On a separate sample of
+                  <strong>100 ShapeNet objects across 21 categories</strong>, it
+                  achieves <strong>72.0% primary accuracy</strong>, with category
+                  names hidden from the recognition model.
+                </p>
+                <p>
+                  In a controlled 100-object comparison, GLANCE achieves
+                  <strong>76% primary accuracy</strong>, compared with
+                  <strong>53% for a single view</strong> and
+                  <strong>73% for random multiview recognition</strong>. It uses
+                  <strong>approximately 15% fewer observations</strong> than the
+                  random-view baseline: 2.63 versus 3.09 on average. Removing
+                  explicit hypothesis formulation and verification reduces primary
+                  accuracy to 69%.
+                </p>
+                <p>
+                  <em>
+                    Primary accuracy counts a prediction as correct when it matches
+                    at least one reference identity or provides a correct but broader
+                    description.
+                  </em>
                 </p>
                 <h4>Research significance</h4>
                 <p>
-                  The work connects multimodal reasoning with active perception
-                  and geometric understanding. It investigates how a model can
-                  decide what to inspect next, and how to evaluate recognition
-                  when geometry alone does not determine a single unambiguous
-                  label.
+                  The work connects multimodal reasoning, active perception, and
+                  geometric understanding. It studies how a model can decide what
+                  to inspect next and how recognition should be evaluated when
+                  geometry supports multiple plausible identities.
                 </p>
                 <p class="paper-collaboration">
                   Research collaboration with Nafiseh Izadyar and my supervisor,
