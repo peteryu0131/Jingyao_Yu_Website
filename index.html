@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123782" id="theme-color">
-  <meta name="description" content="Jingyao Yu is a software developer and computer science master's student working on 3D understanding, differentiable simulation, and applied machine learning.">
+  <meta name="description" content="Jingyao Yu is a Computer Science MSc student at the University of Victoria working on differentiable simulation, physics-based simulation, scientific machine learning, geometry processing, and 3D understanding.">
   <meta name="author" content="Jingyao Yu">
-  <title>Jingyao Yu — Software Developer</title>
+  <title>Jingyao Yu — Differentiable Simulation, Machine Learning &amp; 3D Understanding</title>
   <link rel="canonical" href="https://peteryu0131.github.io/Jingyao_Yu_Website/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jingyao Yu — Software Developer">
-  <meta property="og:description" content="Software developer and CS master's student. Research in 3D understanding, differentiable simulation, and applied machine learning.">
+  <meta property="og:title" content="Jingyao Yu — Differentiable Simulation, Machine Learning &amp; 3D Understanding">
+  <meta property="og:description" content="Jingyao Yu is a Computer Science MSc student at the University of Victoria working on differentiable simulation, physics-based simulation, scientific machine learning, geometry processing, and 3D understanding.">
   <meta property="og:image" content="https://peteryu0131.github.io/Jingyao_Yu_Website/assets/portrait.jpg">
   <meta property="og:url" content="https://peteryu0131.github.io/Jingyao_Yu_Website/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jingyao Yu — Software Developer">
-  <meta name="twitter:description" content="Software developer and CS master's student. Research in 3D understanding, differentiable simulation, and applied machine learning.">
+  <meta name="twitter:title" content="Jingyao Yu — Differentiable Simulation, Machine Learning &amp; 3D Understanding">
+  <meta name="twitter:description" content="Jingyao Yu is a Computer Science MSc student at the University of Victoria working on differentiable simulation, physics-based simulation, scientific machine learning, geometry processing, and 3D understanding.">
   <meta name="twitter:image" content="https://peteryu0131.github.io/Jingyao_Yu_Website/assets/portrait.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,9 +57,10 @@
       </div>
       <nav class="nav" aria-label="Main navigation">
         <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#experience">Industry Experience</a>
+        <a href="#projects">Selected Projects</a>
         <a class="nav-contact" href="#contact">Contact</a>
       </nav>
     </div>
@@ -70,11 +71,12 @@
       <div class="wrap hero">
         <div>
           <h1>Jingyao <span>Yu</span></h1>
-          <p class="intro">I build software that makes complex work simpler.</p>
+          <p class="intro">I work on differentiable simulation, physics-based simulation, scientific machine learning, and 3D understanding.</p>
           <p class="hero-detail">
-            I'm a computer science master's student at the University of Victoria
-            with experience in software development, test automation, and applied
-            machine learning.
+            I am a Computer Science MSc student at the University of Victoria,
+            supervised by Teseo Schneider. My research focuses on connecting
+            high-fidelity physical simulation with machine learning,
+            differentiable optimization, and 3D geometric reasoning.
           </p>
           <div class="actions">
             <a class="button button-primary" href="#research">
@@ -98,7 +100,7 @@
             height="850"
             alt="Portrait of Jingyao Yu"
           >
-          <div class="portrait-caption">Developer &amp; Researcher</div>
+          <div class="portrait-caption">Researcher &amp; Developer</div>
         </div>
       </div>
     </div>
@@ -111,26 +113,33 @@
         </div>
         <div class="section-content">
           <div class="section-intro">
-            <p class="section-note">
-              My research interests include computer graphics, geometry
-              processing, and physics-based simulation, particularly
-              differentiable simulation for optimization and machine learning.
-            </p>
+            <h3 class="interests-heading">Research Interests</h3>
+            <ul class="tags research-interests" aria-label="Research interests">
+              <li class="tag">Differentiable Simulation</li>
+              <li class="tag">Physics-Based Simulation</li>
+              <li class="tag">Scientific Machine Learning</li>
+              <li class="tag">Geometry Processing</li>
+              <li class="tag">3D Understanding</li>
+              <li class="tag">Multimodal AI</li>
+            </ul>
           </div>
           <div class="research-grid">
 
             <details class="item-disclosure research-card">
               <summary>
                 <div class="item-heading">
-                  <div class="research-meta">3D understanding · Submitted to ICLR 2027</div>
+                  <div class="research-meta">3D Understanding · Multimodal AI · Submitted to ICLR 2027</div>
                   <h3>
                     GLANCE: Free-Form 3D Object Identification through Active
                     Geometric Inspection
                   </h3>
+                  <p class="paper-authors">Nafiseh Izadyar, Jingyao Yu, Teseo Schneider</p>
                   <p class="item-overview">
-                    Identifying unfamiliar 3D objects through active geometric
-                    inspection, without predefined categories or task-specific 3D
-                    training.
+                    GLANCE studies free-form 3D object identification from geometry
+                    alone. An off-the-shelf multimodal large language model actively
+                    inspects rendered views, maintains competing identity hypotheses,
+                    predicts geometric evidence that could distinguish them, and
+                    selects new viewpoints to resolve ambiguity.
                   </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -212,6 +221,12 @@
                   to inspect next and how recognition should be evaluated when
                   geometry supports multiple plausible identities.
                 </p>
+                <h4>My contribution</h4>
+                <p>
+                  My work included dataset preparation, reviewing/filtering 3D
+                  objects, human annotation, and evaluation of model outputs
+                  against human reference labels.
+                </p>
                 <p class="paper-collaboration">
                   Research collaboration with Nafiseh Izadyar and my supervisor,
                   Teseo Schneider.
@@ -221,11 +236,12 @@
             <details class="item-disclosure research-card">
               <summary>
                 <div class="item-heading">
-                  <div class="research-meta">Scientific computing · Ongoing</div>
-                  <h3>PolyFEM Python API</h3>
+                  <div class="research-meta">Scientific Computing · Differentiable Simulation · Ongoing Research</div>
+                  <h3>Differentiable Simulation with PolyFEM</h3>
                   <p class="item-overview">
-                    Python tools for finite element simulation and differentiable
-                    workflows.
+                    Developing Python and PyTorch interfaces for PolyFEM to support
+                    programmable finite element simulation, differentiable
+                    optimization, and simulation-based machine learning.
                   </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -234,12 +250,18 @@
               </summary>
               <div class="item-body">
                 <p>
-                  Developing a Python interface for PolyFEM that turns simulation
-                  settings into a usable API. My work includes schema-based code
-                  generation, example coverage, and checks against the C++ solver.
-                  I am also exploring a PyTorch-facing workflow for differentiable
-                  simulation.
+                  Research infrastructure built around finite element methods,
+                  connecting simulation, optimization, and machine learning.
                 </p>
+                <ul class="research-contributions">
+                  <li>Developed a schema-driven Python API for configuring PolyFEM simulations.</li>
+                  <li>Connected Python workflows to the underlying C++ finite element solver.</li>
+                  <li>Worked on structured outputs for mesh, displacement, stress, strain, and related simulation quantities.</li>
+                  <li>Developed workflows for differentiable simulation using adjoint gradients.</li>
+                  <li>Exploring PyTorch-compatible interfaces for shape and material optimization.</li>
+                  <li>Built workflows for parameter sweeps, simulation dataset generation, inverse design, and ML experiments.</li>
+                  <li>Validated generated Python configurations against the original PolyFEM backend.</li>
+                </ul>
                 <a
                   class="text-link"
                   href="https://github.com/polyfem/polyfem-python"
@@ -255,13 +277,13 @@
               <summary>
                 <div class="item-heading">
                   <div class="research-meta">
-                    Differentiable Simulation · Machine Learning · Ongoing Research
+                    Differentiable Simulation · Machine Learning · Manuscript in Preparation
                   </div>
-                  <h3>Connecting Differentiable Simulation and Machine Learning</h3>
+                  <h3>Learning Physical Responses and Gradients with Differentiable Simulation</h3>
                   <p class="item-overview">
-                    Developing a Python and PyTorch interface to PolyFEM for
-                    simulation-based learning, sensitivity analysis, and design
-                    optimization.
+                    This research studies how neural surrogate models can learn
+                    physical responses and sensitivities from high-fidelity finite
+                    element simulations and adjoint gradients.
                   </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -271,11 +293,11 @@
               <div class="item-body paper-overview">
                 <h4>From simulation to learning</h4>
                 <p>
-                  This project connects PolyFEM’s finite element solver and adjoint
-                  gradients to Python-based learning workflows. It brings together
-                  programmatic simulation setup, structured outputs, and
-                  PyTorch-compatible differentiation to support data generation and
-                  gradient-based optimization.
+                  This research uses parameterized FEM simulations to generate
+                  stress-response datasets and adjoint gradients as direct
+                  supervision for learning physical sensitivities. It compares
+                  value-only learning against models that directly predict
+                  gradient information.
                 </p>
                 <h4>Learning physical responses and sensitivities</h4>
                 <p>
@@ -313,7 +335,7 @@
                   support design exploration.
                 </p>
                 <h4>Preliminary results</h4>
-                <p>Current experiments achieve:</p>
+                <p>Preliminary results — experiments and evaluation are ongoing.</p>
                 <ul class="research-contributions">
                   <li>
                     <strong>Peak stress prediction:</strong> 74.1% of predictions
@@ -344,11 +366,67 @@
       </div>
     </section>
 
-    <section class="experience section" id="experience">
+    <section class="education section" id="education">
       <div class="wrap">
         <div class="section-heading">
           <span class="section-number">02</span>
-          <h2>Experience</h2>
+          <h2>Education</h2>
+        </div>
+        <div class="section-content">
+          <div class="edu-grid">
+            <div class="edu-card">
+              <div class="years">2025 – Present</div>
+              <h3>M.S. in Computer Science</h3>
+              <p>University of Victoria</p>
+              <p>Supervisor: Teseo Schneider</p>
+              <p>Research: Differentiable simulation, scientific machine learning,
+                geometry processing, and 3D understanding.</p>
+            </div>
+            <div class="edu-card">
+              <div class="years">2021 – 2025</div>
+              <h3>Bachelor of Computer Science</h3>
+              <p>University of Victoria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teaching">
+      <div class="wrap">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <h2>Teaching Experience</h2>
+        </div>
+        <div class="section-content">
+          <div class="section-intro teaching-entry">
+            <h3>Teaching Assistant — CSC 305: Introduction to Computer Graphics</h3>
+            <p class="exp-meta"><em>University of Victoria · May 2026 – Present</em></p>
+            <ul class="research-contributions">
+              <li>
+                Led weekly lab sections for CSC 305: Introduction to Computer
+                Graphics, explaining key concepts and guiding students through
+                programming exercises.
+              </li>
+              <li>
+                Taught and supported topics including C++, geometric transformations,
+                shading, ray tracing, rasterization, and rendering fundamentals.
+              </li>
+              <li>
+                Helped students debug programming assignments, understand graphics
+                algorithms, and resolve technical issues during lab sessions.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="wrap">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <h2>Industry Experience</h2>
         </div>
         <div class="section-content">
           <div class="section-intro">
@@ -490,8 +568,8 @@
     <section class="section" id="projects">
       <div class="wrap">
         <div class="section-heading">
-          <span class="section-number">03</span>
-          <h2>Projects</h2>
+          <span class="section-number">05</span>
+          <h2>Selected Software Projects</h2>
           <a
             class="text-link section-heading-link"
             href="https://github.com/peteryu0131"
@@ -503,7 +581,7 @@
         </div>
         <div class="section-content">
           <div class="projects-grid">
-            <details class="item-disclosure project project-featured">
+            <details class="item-disclosure project">
               <summary>
                 <div class="item-heading">
                   <span class="project-no">PROJECT 01</span>
@@ -685,27 +763,14 @@
       </div>
     </section>
 
-    <section class="education section" id="education">
+    <section class="section" id="certifications">
       <div class="wrap">
         <div class="section-heading">
-          <span class="section-number">04</span>
-          <h2>Education</h2>
+          <span class="section-number">06</span>
+          <h2>Certifications</h2>
         </div>
         <div class="section-content">
-          <div class="edu-grid">
-            <div class="edu-card">
-              <div class="years">2025 – Present</div>
-              <h3>Master of Computer Science</h3>
-              <p>University of Victoria</p>
-            </div>
-            <div class="edu-card">
-              <div class="years">2021 – 2025</div>
-              <h3>Bachelor of Computer Science</h3>
-              <p>University of Victoria</p>
-            </div>
-          </div>
           <div class="certifications">
-            <h3>Licenses &amp; Certifications</h3>
             <ul class="cert-list">
               <li>
                 <a
@@ -760,17 +825,17 @@
     <section class="contact section" id="contact">
       <div class="wrap">
         <div class="section-heading">
-          <span class="section-number">05</span>
+          <span class="section-number">07</span>
           <h2>Contact</h2>
         </div>
         <div class="section-content">
           <div class="contact-layout">
             <div class="contact-copy">
               <p class="contact-lead">
-                For projects, research, or a conversation about software, reach me
-                by email.
+                Interested in PhD opportunities in differentiable simulation,
+                scientific machine learning, 3D geometry, and physical AI.
               </p>
-              <p class="contact-aside">Open to opportunities</p>
+              <p class="contact-aside">Fall 2027 CS PhD applications · Please reach me by email.</p>
             </div>
             <ul class="contact-list">
               <li>

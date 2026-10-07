@@ -687,10 +687,7 @@ section {
     gap: 17px;
   }
 }
-@media (max-width: 650px) {
-  .wrap {
-    padding-inline: 20px;
-  }
+@media (max-width: 850px) {
   .top {
     height: auto;
     min-height: 72px;
@@ -730,6 +727,11 @@ section {
     padding: 0;
     background: none;
     color: var(--nav-link);
+  }
+}
+@media (max-width: 650px) {
+  .wrap {
+    padding-inline: 20px;
   }
   .hero {
     display: flex;
@@ -902,6 +904,8 @@ section {
   margin-bottom: 24px;
 }
 .section-heading h2 {
+  flex: 1;
+  min-width: 0;
   margin: 0;
   font-size: clamp(30px, 3.5vw, 42px);
   letter-spacing: -0.045em;
@@ -926,6 +930,24 @@ section {
   font-size: 17px;
   line-height: 1.6;
   color: var(--muted);
+}
+.interests-heading,
+.teaching-entry h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.research-interests {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.research-card .paper-authors {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--blue);
+}
+.edu-card p + p {
+  margin-top: 12px;
 }
 .education .section-number {
   color: #9fc4ff;
@@ -1125,9 +1147,7 @@ section {
   }
 }
 .certifications {
-  border-top: 1px solid #ffffff61;
-  margin-top: 18px;
-  padding-top: 24px;
+  margin-left: calc(var(--section-label-width) + var(--section-label-gap));
 }
 .certifications h3 {
   font-size: 13px;
@@ -1151,11 +1171,11 @@ section {
   gap: 6px;
   align-content: start;
   padding-top: 16px;
-  border-top: 1px solid #ffffff40;
+  border-top: 1px solid var(--line);
   min-width: 0;
 }
 .cert-list a {
-  color: #fff;
+  color: var(--ink);
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -1166,7 +1186,7 @@ section {
   gap: 8px;
 }
 .cert-list a:hover {
-  color: #9fc4ff;
+  color: var(--blue2);
 }
 .cert-list .ext-icon {
   flex: none;
@@ -1174,12 +1194,12 @@ section {
   margin-top: 3px;
 }
 .cert-meta {
-  color: #d5e1f7;
+  color: var(--muted);
   font-size: 13px;
   line-height: 1.45;
 }
 .cert-id {
-  color: #9fc4ff;
+  color: var(--blue2);
   font-size: 12px;
   font-weight: 650;
   overflow-wrap: anywhere;
