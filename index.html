@@ -4,24 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123782" id="theme-color">
-  <meta name="description" content="Jingyao Yu is a Computer Science MSc student at the University of Victoria working on differentiable simulation, physics-based simulation, scientific machine learning, geometry processing, and 3D understanding.">
+  <meta name="description" content="Jingyao Yu is an MSc student in Computer Science at the University of Victoria working on machine learning, physics-based simulation, computer graphics, and 3D understanding, with broader interests in computer vision and human–AI interaction.">
   <meta name="author" content="Jingyao Yu">
-  <title>Jingyao Yu — Differentiable Simulation, Machine Learning &amp; 3D Understanding</title>
+  <title>Jingyao Yu — Computer Science Researcher</title>
   <link rel="canonical" href="https://peteryu0131.github.io/Jingyao_Yu_Website/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jingyao Yu — Differentiable Simulation, Machine Learning &amp; 3D Understanding">
-  <meta property="og:description" content="Jingyao Yu is a Computer Science MSc student at the University of Victoria working on differentiable simulation, physics-based simulation, scientific machine learning, geometry processing, and 3D understanding.">
+  <meta property="og:title" content="Jingyao Yu — Computer Science Researcher">
+  <meta property="og:description" content="Jingyao Yu is an MSc student in Computer Science at the University of Victoria working on machine learning, physics-based simulation, computer graphics, and 3D understanding, with broader interests in computer vision and human–AI interaction.">
   <meta property="og:image" content="https://peteryu0131.github.io/Jingyao_Yu_Website/assets/portrait.jpg">
   <meta property="og:url" content="https://peteryu0131.github.io/Jingyao_Yu_Website/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jingyao Yu — Differentiable Simulation, Machine Learning &amp; 3D Understanding">
-  <meta name="twitter:description" content="Jingyao Yu is a Computer Science MSc student at the University of Victoria working on differentiable simulation, physics-based simulation, scientific machine learning, geometry processing, and 3D understanding.">
+  <meta name="twitter:title" content="Jingyao Yu — Computer Science Researcher">
+  <meta name="twitter:description" content="Jingyao Yu is an MSc student in Computer Science at the University of Victoria working on machine learning, physics-based simulation, computer graphics, and 3D understanding, with broader interests in computer vision and human–AI interaction.">
   <meta name="twitter:image" content="https://peteryu0131.github.io/Jingyao_Yu_Website/assets/portrait.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261007-8">
   <script>
     (() => {
       const saved = localStorage.getItem("theme");
@@ -71,12 +71,14 @@
       <div class="wrap hero">
         <div>
           <h1>Jingyao <span>Yu</span></h1>
-          <p class="intro">I work on differentiable simulation, physics-based simulation, scientific machine learning, and 3D understanding.</p>
+          <p class="hero-bio">
+            I am an <strong>MSc student in Computer Science</strong> at the
+            <strong>University of Victoria</strong>.
+          </p>
           <p class="hero-detail">
-            I am a Computer Science MSc student at the University of Victoria,
-            supervised by Teseo Schneider. My research focuses on connecting
-            high-fidelity physical simulation with machine learning,
-            differentiable optimization, and 3D geometric reasoning.
+            My current work involves developing differentiable finite element
+            simulation tools, using machine learning to predict physical responses
+            and their sensitivities, and investigating 3D object understanding.
           </p>
           <div class="actions">
             <a class="button button-primary" href="#research">
@@ -112,23 +114,45 @@
           <h2>Research</h2>
         </div>
         <div class="section-content">
-          <div class="section-intro">
+          <div class="section-intro research-interest-panel">
             <h3 class="interests-heading">Research Interests</h3>
-            <ul class="tags research-interests" aria-label="Research interests">
-              <li class="tag">Differentiable Simulation</li>
-              <li class="tag">Physics-Based Simulation</li>
-              <li class="tag">Scientific Machine Learning</li>
-              <li class="tag">Geometry Processing</li>
-              <li class="tag">3D Understanding</li>
-              <li class="tag">Multimodal AI</li>
-            </ul>
+            <div class="interest-groups">
+              <div class="interest-group">
+                <h4>Vision &amp; Geometry</h4>
+                <ul class="tags research-interests" aria-label="Vision &amp; Geometry interests">
+                  <li class="tag">Computer Vision</li>
+                  <li class="tag">3D Vision &amp; Geometry</li>
+                  <li class="tag">Computer Graphics</li>
+                </ul>
+              </div>
+              <div class="interest-group">
+                <h4>AI &amp; Interaction</h4>
+                <ul class="tags research-interests" aria-label="AI &amp; Interaction interests">
+                  <li class="tag">AI Agents</li>
+                  <li class="tag">Human–AI Interaction</li>
+                  <li class="tag">AI-Assisted Systems</li>
+                </ul>
+              </div>
+              <div class="interest-group">
+                <h4>Simulation &amp; Learning</h4>
+                <ul class="tags research-interests" aria-label="Simulation &amp; Learning interests">
+                  <li class="tag">Differentiable Simulation</li>
+                  <li class="tag">Physics-Based Simulation</li>
+                  <li class="tag">PDE-Based Modeling</li>
+                  <li class="tag">Scientific Machine Learning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section-intro selected-research-heading">
+            <h3 class="interests-heading">Selected Research</h3>
           </div>
           <div class="research-grid">
 
             <details class="item-disclosure research-card">
               <summary>
                 <div class="item-heading">
-                  <div class="research-meta">3D Understanding · Multimodal AI · Submitted to ICLR 2027</div>
+                  <div class="research-meta"><span>3D Understanding · Multimodal AI</span><span class="research-status">Submitted to ICLR 2027</span></div>
                   <h3>
                     GLANCE: Free-Form 3D Object Identification through Active
                     Geometric Inspection
@@ -155,14 +179,6 @@
                   inferring an object’s identity from geometry without a list of
                   possible categories. A single view can be ambiguous, and the
                   same shape can admit several reasonable descriptions.
-                </p>
-                <h4>Active inspection and hypothesis testing</h4>
-                <p>
-                  GLANCE uses an off-the-shelf multimodal large language model to
-                  inspect rendered views of a 3D object. It maintains competing
-                  identity hypotheses, predicts which geometric features would
-                  distinguish them, and selects additional viewpoints to test
-                  those predictions.
                 </p>
                 <ul class="research-contributions">
                   <li>
@@ -223,7 +239,7 @@
                 </p>
                 <h4>My contribution</h4>
                 <p>
-                  My work included dataset preparation, reviewing/filtering 3D
+                  My work included dataset preparation, reviewing and filtering 3D
                   objects, human annotation, and evaluation of model outputs
                   against human reference labels.
                 </p>
@@ -236,7 +252,7 @@
             <details class="item-disclosure research-card">
               <summary>
                 <div class="item-heading">
-                  <div class="research-meta">Scientific Computing · Differentiable Simulation · Ongoing Research</div>
+                  <div class="research-meta"><span>Scientific Computing · Differentiable Simulation</span><span class="research-status">Ongoing Research</span></div>
                   <h3>Differentiable Simulation with PolyFEM</h3>
                   <p class="item-overview">
                     Developing Python and PyTorch interfaces for PolyFEM to support
@@ -277,7 +293,8 @@
               <summary>
                 <div class="item-heading">
                   <div class="research-meta">
-                    Differentiable Simulation · Machine Learning · Manuscript in Preparation
+                    <span>Differentiable Simulation · Machine Learning</span>
+                    <span class="research-status">Manuscript in Preparation</span>
                   </div>
                   <h3>Learning Physical Responses and Gradients with Differentiable Simulation</h3>
                   <p class="item-overview">
@@ -335,7 +352,6 @@
                   support design exploration.
                 </p>
                 <h4>Preliminary results</h4>
-                <p>Preliminary results — experiments and evaluation are ongoing.</p>
                 <ul class="research-contributions">
                   <li>
                     <strong>Peak stress prediction:</strong> 74.1% of predictions
@@ -371,20 +387,28 @@
         <div class="section-heading">
           <span class="section-number">02</span>
           <h2>Education</h2>
+          <p class="education-gpa">
+            <span>MSc Cumulative GPA</span>
+            <strong>8.67<span> / 9.00</span></strong>
+          </p>
         </div>
         <div class="section-content">
           <div class="edu-grid">
             <div class="edu-card">
-              <div class="years">2025 – Present</div>
-              <h3>M.S. in Computer Science</h3>
+              <div class="edu-card-heading">
+                <h3>MSc in Computer Science</h3>
+                <div class="years">2025 – Present</div>
+              </div>
               <p>University of Victoria</p>
-              <p>Supervisor: Teseo Schneider</p>
-              <p>Research: Differentiable simulation, scientific machine learning,
-                geometry processing, and 3D understanding.</p>
+              <p class="edu-detail"><strong>Supervisor</strong> Teseo Schneider</p>
+              <p class="edu-detail"><strong>Research</strong> Physics-based and differentiable simulation,
+                scientific machine learning, PDE-based modeling, and 3D understanding.</p>
             </div>
             <div class="edu-card">
-              <div class="years">2021 – 2025</div>
-              <h3>Bachelor of Computer Science</h3>
+              <div class="edu-card-heading">
+                <h3>Bachelor of Computer Science</h3>
+                <div class="years">2021 – 2025</div>
+              </div>
               <p>University of Victoria</p>
             </div>
           </div>
@@ -400,23 +424,42 @@
         </div>
         <div class="section-content">
           <div class="section-intro teaching-entry">
-            <h3>Teaching Assistant — CSC 305: Introduction to Computer Graphics</h3>
-            <p class="exp-meta"><em>University of Victoria · May 2026 – Present</em></p>
-            <ul class="research-contributions">
-              <li>
-                Led weekly lab sections for CSC 305: Introduction to Computer
-                Graphics, explaining key concepts and guiding students through
-                programming exercises.
-              </li>
-              <li>
-                Taught and supported topics including C++, geometric transformations,
-                shading, ray tracing, rasterization, and rendering fundamentals.
-              </li>
-              <li>
-                Helped students debug programming assignments, understand graphics
-                algorithms, and resolve technical issues during lab sessions.
-              </li>
-            </ul>
+            <details class="item-disclosure teaching-card">
+              <summary>
+                <div class="item-heading">
+                  <h3>Teaching Assistant – CSC 305: Introduction to Computer Graphics</h3>
+                  <p class="exp-meta"><em>University of Victoria · Victoria, BC · May 2026 – Present</em></p>
+                  <p class="exp-stack">
+                    Focus: Computer Graphics · Lab Instruction · Programming Support · Assessment
+                  </p>
+                </div>
+                <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <div class="item-body">
+                <ul class="research-contributions">
+                  <li>
+                    Lead CSC 305 lab sessions in person and remotely, explaining
+                    computer graphics concepts and guiding students through
+                    programming assignments.
+                  </li>
+                  <li>
+                    Explain assignment requirements and implementation approaches,
+                    and help students debug code and connect graphics algorithms
+                    to their implementations.
+                  </li>
+                  <li>
+                    Grade assignments and exams using consistent criteria and
+                    provide feedback on programming and conceptual errors.
+                  </li>
+                  <li>
+                    Coordinate with the instructor and other teaching assistants
+                    on lab delivery and grading.
+                  </li>
+                </ul>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -429,21 +472,16 @@
           <h2>Industry Experience</h2>
         </div>
         <div class="section-content">
-          <div class="section-intro">
-            <p class="section-note">
-              Building useful products, reliable tests, and better tools across
-              software teams.
-            </p>
-          </div>
           <div class="exp-list">
             <details class="item-disclosure exp-item">
               <summary>
-                <div class="exp-date">May – Dec 2024</div>
+                <div class="exp-date">May 2024 – Dec 2024</div>
                 <div class="item-heading">
                   <h3>QA Analyst – Test Automation Engineer Co-op</h3>
                   <p class="exp-meta">BC Liquor Distribution Branch · Burnaby, BC</p>
                   <p class="exp-stack">
-                    Eggplant Functional, Oracle SQL, .NET, C#, Software Testing
+                    C#, .NET, Selenium, SpecFlow, Sikuli, Eggplant
+                    Functional, Oracle SQL, Test Automation
                   </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -453,17 +491,34 @@
               <div class="item-body">
                 <ul class="exp-points">
                   <li>
-                    Built and maintained automated tests with Selenium, SpecFlow,
-                    Eggplant Functional, and Oracle SQL for the BCLDB product
-                    suite.
+                    Built and maintained automated test suites using C#, .NET,
+                    Selenium WebDriver, Sikuli, SpecFlow, Eggplant Functional,
+                    and Oracle SQL for enterprise software systems.
                   </li>
                   <li>
-                    Improved shared helper libraries and overhauled date-selection
-                    logic to make the framework more reliable and reusable.
+                    Designed the test automation architecture and testing
+                    strategy for the CARM project, covering regression, smoke,
+                    end-to-end, and UI testing workflows.
                   </li>
                   <li>
-                    Structured CARM project test architecture and covered
-                    regression, smoke, and end-to-end flows.
+                    Developed image-recognition-based UI automation with
+                    Eggplant Functional to test complex application workflows
+                    that were difficult to cover with standard UI selectors.
+                  </li>
+                  <li>
+                    Refactored shared automation libraries, helper functions,
+                    and test logic to reduce duplicated code and improve
+                    maintainability and test stability.
+                  </li>
+                  <li>
+                    Investigated failed automated tests, traced issues to
+                    application logic, test scripts, or environment problems,
+                    and performed root-cause analysis to reduce false failures.
+                  </li>
+                  <li>
+                    Worked with developers and QA team members during sprint
+                    cycles, test reviews, and defect investigation to improve
+                    test coverage and software release quality.
                   </li>
                 </ul>
               </div>
@@ -475,7 +530,10 @@
                 <div class="item-heading">
                   <h3>Software Developer Co-op</h3>
                   <p class="exp-meta">Eddyfi Technologies · Nanaimo, BC</p>
-                  <p class="exp-stack">C#, WPF, .NET, XAML, SQL, SSRS</p>
+                  <p class="exp-stack">
+                    C#, .NET, WPF, XAML, SQL, SQLite, Entity Framework,
+                    xUnit, NSubstitute, SSRS
+                  </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -484,16 +542,41 @@
               <div class="item-body">
                 <ul class="exp-points">
                   <li>
-                    Designed and shipped WPF/XAML UI features, including a Report
-                    module for clearer device data visualization.
+                    Developed and maintained C#/.NET desktop applications using
+                    WPF and XAML, working across user interfaces, application
+                    logic, database access, reporting, and testing.
                   </li>
                   <li>
-                    Integrated FastReport for automated device reporting and built
-                    a continuous robot-testing plugin in C# and WPF.
+                    Designed database and metadata structures and implemented
+                    data access workflows using SQL, SQLite, Entity Framework,
+                    and DbContext.
                   </li>
                   <li>
-                    Applied data virtualization to handle large datasets with lower
-                    memory use and smoother rendering.
+                    Built a database visualization interface that allowed users
+                    to browse categorized metadata and export stored information
+                    through the desktop application.
+                  </li>
+                  <li>
+                    Built test applications and mock databases to evaluate
+                    different approaches for loading and displaying large
+                    datasets, and used virtualized collections and IEnumerable /
+                    IEnumerator patterns to improve data handling.
+                  </li>
+                  <li>
+                    Evaluated SSRS and FastReport for report generation,
+                    identified memory limitations in the existing reporting
+                    workflow, and helped assess a more suitable reporting
+                    approach.
+                  </li>
+                  <li>
+                    Implemented unit tests with xUnit and NSubstitute and
+                    debugged application crashes caused by data-binding
+                    problems, missing parameters, and type mismatches.
+                  </li>
+                  <li>
+                    Developed a C#/WPF testing plugin for robotic systems to
+                    automate feature testing and validate device controls and UI
+                    behavior.
                   </li>
                 </ul>
               </div>
@@ -501,11 +584,13 @@
 
             <details class="item-disclosure exp-item">
               <summary>
-                <div class="exp-date">2020</div>
+                <div class="exp-date">2020 · Part Time</div>
                 <div class="item-heading">
-                  <h3>Website Designer &amp; Technical Support · Part Time</h3>
+                  <h3>Website Developer &amp; Technical Support</h3>
                   <p class="exp-meta">Progress Education Inc. · Vancouver, BC</p>
-                  <p class="exp-stack">HTML, CSS, JavaScript, PHP</p>
+                  <p class="exp-stack">
+                    HTML, CSS, JavaScript, PHP, Responsive Web Design
+                  </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -514,16 +599,30 @@
               <div class="item-body">
                 <ul class="exp-points">
                   <li>
-                    Built a PHP/MySQL in-site search system and an instructor
-                    rating feature to improve content discovery and engagement.
+                    Developed and maintained a student-facing website using
+                    HTML, CSS, JavaScript, and PHP.
                   </li>
                   <li>
-                    Integrated third-party plugins for better cross-device
-                    responsiveness and accessibility.
+                    Built a PHP-based course search system that allowed students
+                    to find tutoring courses and related information directly
+                    through the website.
                   </li>
                   <li>
-                    Grew WeChat and Instagram presence with campaigns that raised
-                    follower count by 30% and social referral traffic by 35%.
+                    Designed and implemented an instructor rating feature to
+                    help students compare instructors and select suitable
+                    tutoring services.
+                  </li>
+                  <li>
+                    Created responsive page layouts using CSS Grid and Flexbox
+                    to support desktop and mobile devices.
+                  </li>
+                  <li>
+                    Integrated third-party plugins and maintained website
+                    functionality across different user-facing components.
+                  </li>
+                  <li>
+                    Provided technical support and helped maintain the
+                    organization's online presence and digital services.
                   </li>
                 </ul>
               </div>
@@ -531,13 +630,16 @@
 
             <details class="item-disclosure exp-item">
               <summary>
-                <div class="exp-date">May – Aug 2019</div>
+                <div class="exp-date">May 2019 – Aug 2019</div>
                 <div class="item-heading">
                   <h3>Database Development Intern</h3>
                   <p class="exp-meta">
                     Weizhijie Information Technology Ltd. · Beijing, China
                   </p>
-                  <p class="exp-stack">Oracle SQL</p>
+                  <p class="exp-stack">
+                    Oracle SQL, Database Design, ER Modeling, SQL
+                    Optimization, Software Testing
+                  </p>
                 </div>
                 <svg class="item-arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="m8 4 8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -546,16 +648,30 @@
               <div class="item-body">
                 <ul class="exp-points">
                   <li>
-                    Designed multi-hospital database schemas, ER diagrams, and SQL
-                    scripts for object creation and modification.
+                    Worked on database development and software testing for
+                    information systems used across multiple hospitals.
                   </li>
                   <li>
-                    Tuned Oracle SQL queries and resolved performance issues across
-                    the system.
+                    Designed relational database schemas, created
+                    entity-relationship diagrams, defined table relationships, and
+                    wrote SQL scripts for database objects and system data.
                   </li>
                   <li>
-                    Investigated data corruption and server failures using logs and
-                    monitoring tools, then restored and repaired affected data.
+                    Optimized SQL queries and investigated database performance
+                    issues to improve data access and system reliability.
+                  </li>
+                  <li>
+                    Performed unit, integration, and system testing to verify
+                    application and database behavior.
+                  </li>
+                  <li>
+                    Investigated data corruption, application errors, server
+                    crashes, and database failures using system logs and
+                    performance information.
+                  </li>
+                  <li>
+                    Supported database recovery tasks, including backup
+                    restoration and diagnosing issues with corrupted data.
                   </li>
                 </ul>
               </div>
@@ -601,10 +717,10 @@
               </summary>
               <div class="item-body">
                 <p>
-                  Developed a smart phone assistant that schedules and places
+                  Developed an automated phone assistant that schedules and places
                   customer-service calls, listens for live agents, and transfers
-                  the call to the user—reducing long hold times for services such
-                  as CRA, ICBC, and Fido.
+                  the call to the user, reducing the time users spend waiting on
+                  hold for services such as CRA, ICBC, and Fido.
                 </p>
                 <ul class="project-points">
                   <li>
@@ -616,7 +732,7 @@
                     numbers and send DTMF sequences that navigate phone menus.
                   </li>
                   <li>
-                    <strong>Realtime speech detection:</strong> Streams call audio
+                    <strong>Real-time speech detection:</strong> Streams call audio
                     to Google Speech-to-Text and triggers actions on keyword
                     matches.
                   </li>
@@ -832,10 +948,9 @@
           <div class="contact-layout">
             <div class="contact-copy">
               <p class="contact-lead">
-                Interested in PhD opportunities in differentiable simulation,
-                scientific machine learning, 3D geometry, and physical AI.
+                I am seeking PhD opportunities starting in Fall 2027.
               </p>
-              <p class="contact-aside">Fall 2027 CS PhD applications · Please reach me by email.</p>
+              <p class="contact-aside">Please contact me by email to discuss potential research opportunities.</p>
             </div>
             <ul class="contact-list">
               <li>
